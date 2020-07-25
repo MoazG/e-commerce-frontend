@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="./fonts/fontawesome-free-5.13.1-web/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="./main.js"></script>
+        <script type="module" src="./loadProducts.js"></script>
+    </head>
+    <body>
+        <div class="to_top">
+            <a href="#"><i class="fas fa-angle-double-up"></i></a>
+        </div>
+        <header>
+            <div class="top-nav">
+                <div class="container">
+                    <ul>
+                        <li class="top-nav-left">
+                            <p>Telephone Enquiry: (012)800 456 789 – 987</p>
+                        </li>
+                        <li class="top-nav-right">
+                            <div class="login_name">
+                                <a href="login.html">Sign In</a>
+                            </div>
+                            <div class="my_account_setting">
+                                <a href=""
+                                    >My account <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="my_account_modal">
+                                    <li>
+                                        <a href="">
+                                            Account Setting
+                                            <i class="fas fa-cog"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            My Orders
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Wish List
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="open_compare">
+                                        <a href="javascript:void(0)">
+                                            Compare List
+                                            <i class="fas fa-sliders-h"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="log_out" href="">
+                                            Logout
+                                            <i class="fas fa-sign-out-alt"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- <a href="">Checkout</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mid-nav-cont">
+                <div class="mid-nav">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="index.html"><h1>E-Shop</h1></a>
+                        </div>
+                        <div class="search-box-cont">
+                            <div class="search-box">
+                                <input
+                                    type="search"
+                                    placeholder="What are you looking for?"
+                                    class="search-input"
+                                />
+                                <input
+                                    type="button"
+                                    value="Search"
+                                    class="search-button"
+                                />
+                            </div>
+                            <div class="search_results hide">
+                                <ul></ul>
+                            </div>
+                            <span class="autocomplete_overlay"></span>
+                        </div>
+
+                        <div class="cart-container">
+                            <div class="wishing-list">
+                                <a href="">
+                                    <!-- <i class="fa fa-heart-o"></i> -->
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-counter">
+                                    <p>0</p>
+                                </div>
+                                <div class="cart-icons">
+                                    <a href="shoppingCart.html">
+                                        <!-- <i class="fa fa-shopping-bag"></i -->
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </a>
+                                    <p class="cart-total-price">
+                                        $<span>0</span>
+                                    </p>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="cart_items"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="container">
+                    <div class="categories">
+                        <!-- <label for="category">
+                    Categories
+                </label>
+                <input type="checkbox" id="category" /> -->
+                        <span>Categories</span>
+                        <i class="fa fa-bars"></i>
+                        <div class="categories-list-container">
+                            <ul>
+                                <li class="categories-list-container_li">
+                                    <a href=""
+                                        >Mobiles & Tablets
+                                        <i class="fa fa-angle-right"></i
+                                    ></a>
+                                    <ul class="categories_items_ul">
+                                        <li class="categories_items_li">
+                                            <a href="">Apple</a>
+                                        </li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Huawei</a></li>
+                                        <li><a href="">Honor</a></li>
+                                        <li><a href="">Oppo</a></li>
+                                        <li><a href="">Xaiomi</a></li>
+                                        <li><a href="">Infinix</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        >Computer & Networking
+                                        <i class="fa fa-angle-right"></i
+                                    ></a>
+                                    <ul class="categories_items_ul">
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Hard Disks</a></li>
+                                        <li><a href="">Keyboards</a></li>
+                                        <li><a href="">Printers</a></li>
+                                        <li><a href="">Scanners</a></li>
+                                        <li><a href="">Networking</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        >Electronics
+                                        <i class="fa fa-angle-right"></i
+                                    ></a>
+                                    <ul class="categories_items_ul">
+                                        <li><a href="">Speakers</a></li>
+                                        <li><a href="">HeadSets</a></li>
+                                        <li><a href="">Watches & Clocks</a></li>
+                                        <li>
+                                            <a href=""
+                                                >Virtual Reality Headsets</a
+                                            >
+                                        </li>
+                                        <li><a href="">Scanners</a></li>
+                                        <li><a href="">Networking</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        >Video Games
+                                        <i class="fa fa-angle-right"></i
+                                    ></a>
+                                    <ul class="categories_items_ul">
+                                        <li><a href="">Sony PS4</a></li>
+                                        <li><a href="">Sony PS3</a></li>
+                                        <li><a href="">Xbox one</a></li>
+                                        <li><a href="">Xbox 360</a></li>
+                                        <li><a href="">PC Gaming</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Shop All Categories
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom-list-container">
+                        <div class="main_menu">
+                            <ul class="main_menu_ul">
+                                <li class="main_menu_item">
+                                    <a href=""
+                                        >Home <i class="fa fa-angle-down"></i
+                                    ></a>
+                                    <div class="extra_menu">
+                                        <ul class="sub_menu">
+                                            <li class="sub_menu_item">
+                                                <a href="">Demo1</a>
+                                            </li>
+                                            <li class="sub_menu_item">
+                                                <a href="">Demo2</a>
+                                            </li>
+                                            <li class="sub_menu_item">
+                                                <a href="">Demo3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="main_menu_item">
+                                    <a href=""
+                                        >Shop <i class="fa fa-angle-down"></i
+                                    ></a>
+                                </li>
+                                <li class="main_menu_item">
+                                    <a href=""
+                                        >Blog <i class="fa fa-angle-down"></i
+                                    ></a>
+                                </li>
+                                <li class="main_menu_item">
+                                    <a href=""
+                                        >About Us
+                                        <!-- <i class="fa fa-angle-down"></i> -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="compare_section">
+            <div class="container">
+                <div class="compare_items_cont">
+                    <ul class="compare_list"></ul>
+                </div>
+                <div class="compare_items_btn">
+                    <a href="javascript:void(0);" class="btn compare"
+                        >Compare</a
+                    >
+                    <a href="javascript:void(0);" class="btn clear"
+                        >Clear All</a
+                    >
+                    <a href="javascript:void(0);" class="btn hide">Hide List</a>
+                </div>
+            </div>
+            <div class="compare_modal_cont">
+                <div class="container">
+                    <div class="compare_modal">
+                        <table class="compare_table">
+                            <tr height="40">
+                                <th>Remove</th>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                            </tr>
+                            <tr class="table_img">
+                                <th>image</th>
+                            </tr>
+                            <tr>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products_section">
+            <div class="container product_container_outer">
+                <div class="products_title">
+                    <h2>products</h2>
+                </div>
+            </div>
+        </section>
+        <section class="quick_view_modal">
+            <div class="container"></div>
+        </section>
+
+        <footer>
+            <div class="top_footer">
+                <div class="container">
+                    <div class="footer_section">
+                        <h2>Popular Search</h2>
+                        <ul>
+                            <li><a href="">Iphone 11Pro</a></li>
+                            <li><a href="">Samsung Tv</a></li>
+                            <li><a href="">Microsoft surface</a></li>
+                            <li><a href="">Iphone Xs</a></li>
+                            <li><a href="">Samsung Note 10</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <h2>My Account</h2>
+                        <ul>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Order History</a></li>
+                            <li><a href="">wishing List</a></li>
+                            <li><a href="">Compare List</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <h2>information</h2>
+                        <ul>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">delivery information</a></li>
+                            <li><a href="">returns</a></li>
+                            <li><a href="">term & condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section">
+                        <div class="help_center">
+                            <div class="help_center_icon">
+                                <i class="far fa-question-circle"></i>
+                            </div>
+                            <div>
+                                <h3>help center</h3>
+                                <p>Have a question or an issue?</p>
+                                <p>We are here to help</p>
+                            </div>
+                        </div>
+                        <div class="follow_us">
+                            <h2>follow us</h2>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://www.facebook.com"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fab fa-facebook-square"
+                                            style="color: #0063d1;"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.instagram.com"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fab fa-instagram-square"
+                                            style="color: #d72f7d;"
+                                        ></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.twitter.com"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fab fa-twitter-square"
+                                            style="color: #0063d1;"
+                                        ></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.youtube.com"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fab fa-youtube-square"
+                                            style="color: red;"
+                                        ></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_footer"></div>
+        </footer>
+    </body>
+</html>
